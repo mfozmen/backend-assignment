@@ -1,0 +1,19 @@
+{
+  "name": "getir-backend-assignment",
+  "version": "1.0.0",
+  "description": "Backend case study for Getir company.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfozmen/getir-backend-assignment.git"
+  },
+  "author": "Mehmet Fahri Özmen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfozmen/getir-backend-assignment/issues"
+  },
+  "homepage": "https://github.com/mfozmen/getir-backend-assignment#readme"
+}
