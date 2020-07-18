@@ -1,0 +1,57 @@
+{
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true,
+      "mocha": true
+    },
+    "extends": ["eslint:recommended", "plugin:node/recommended"],
+    "plugins": ["require-path-exists"],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
+    "rules": {
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "linebreak-style": ["error", "unix"],
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ],
+      "semi": ["error", "always"],
+      "block-scoped-var": "error",
+      "no-var": 2,
+      "node/no-unsupported-features/es-syntax": [
+        "error",
+        {
+          "version": ">=8.3.0",
+          "ignores": []
+        }
+      ],
+      "node/no-extraneous-require": [
+        "error",
+        {
+          "allowModules": ["mailchimp-api-v3", "body-parser", "request-promise"]
+        }
+      ],
+      "node/no-unpublished-require": [
+        "error",
+        {
+          "allowModules": ["supertest", "dotenv"]
+        }
+      ]
+    }
+  }
+  
