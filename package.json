@@ -4,6 +4,7 @@
   "description": "Backend case study for Getir company.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha test"
   },
   "repository": {
