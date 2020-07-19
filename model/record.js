@@ -20,11 +20,13 @@ class Record {
         }
       },
       {
+        // Flatten counts arrays
         $unwind: {
           path: '$counts'
         }
       },
       {
+        // Group by key and createdAt
         $group: {
           _id: { key: '$key', createdAt: '$createdAt' },
           key: { $first: '$key' },
@@ -35,6 +37,7 @@ class Record {
         }
       },
       {
+        // Filter by minCount and maxCount
         $match: {
           totalCount: {
             $gte: minCount,
@@ -43,6 +46,7 @@ class Record {
         }
       },
       {
+        // Exclude _id in resultset
         $project: {
           _id: 0
         }
