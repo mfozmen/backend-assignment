@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const HttpStatus = require('http-status-codes');
 const Record = require('../model/record');
-const { checkSchema, validationResult } = require('express-validator');
 const validations = require('../validations');
 const { validate } = require('../utils/validator');
 
