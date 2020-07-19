@@ -1,7 +1,10 @@
 const request = require('supertest');
+require('dotenv').config();
 const app = require('../app');
 
 describe('/records', function () {
+  this.timeout(60000);
+
   it('searchs records', function (done) {
     request(app)
       .post('/records/search')
@@ -14,7 +17,7 @@ describe('/records', function () {
       .expect(200)
       .then(res => {
         console.log(res.body);
-        done(null);
+        done();
       })
       .catch(err => {
         console.log(err);
