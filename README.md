@@ -1,4 +1,4 @@
-# getir-backend-assignment
+# backend-assignment
 
 ## Endpoint
 
